@@ -1,0 +1,155 @@
+body {
+  /*height: 100%;*/
+  margin: auto 0;
+  background-image: url("images/img2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*.container {
+  height: 100%;
+}*/
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 80px;
+  height: 200px;
+  background-color: white;
+}
+
+#menu {
+  width: 100%;
+  text-align: right;
+}
+#menu i {
+  padding: 2% 5% 0 0;
+}
+
+#contenu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10%;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+}
+
+#contenu p {
+  font-size: 0.6em;
+}
+/*BOUTON PLAY MODAL //////////////////////////////////*/
+#contenu .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+#contenu .play:hover {
+  opacity: 0.5;
+}
+#contenu .play:active {
+  /*outline: none;*/
+  padding: 0;
+}
+
+#contenu i {
+  color: #181A1A;
+  padding-left: 5px;
+}
+
+/*ZONE SAISIE EMAIL //////////////////////////////////*/
+#register {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border: solid 1px white;
+  margin: 30px 0;
+}
+
+#register input {
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  width: 400px;
+}
+
+#register .valid {
+  background-color: rgb(185,145,97);
+  border-radius: 0;
+  width: 130px;
+  height: 50px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 0;
+}
+
+#register .valid:hover {
+  background-color: rgba(185,145,97, 0.5);
+}
+
+#register .valid:active {
+  padding: 0;
+}
+
+/*FENETRE MODAL //////////////////////////////////*/
+#modal.closed {
+	display: none;
+}
+#modal.opened {
+	display: true;
+}
+#modal {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	position: absolute;
+	top: 0;
+  bottom: 0;
+	left: 0;
+  right: 0
+	height: 100%;
+	width: 100%;
+	/*margin-left: -200px;*/
+	background-color: rgb(19,21,22);
+	padding: 2%;
+}
+
+#modal img {
+	width: 50%;
+}
+
+#modal button {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
